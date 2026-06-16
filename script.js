@@ -161,12 +161,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Certificates Search & Filter
     // ----------------------------------------------------
     const certSearch = document.getElementById('cert-search');
-    const certFilterBtns = document.querySelectorAll('.filter-btn');
+    const certFilterBtns = document.querySelectorAll('#certificates .filter-btn');
     const certCards = document.querySelectorAll('.cert-card-item');
 
     function filterCertificates() {
         const query = certSearch.value.toLowerCase().trim();
-        const activeFilterBtn = document.querySelector('.filter-btn.active');
+        const activeFilterBtn = document.querySelector('#certificates .filter-btn.active');
         const filterVal = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'all';
 
         certCards.forEach(card => {
