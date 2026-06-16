@@ -238,9 +238,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const filterVal = btn.getAttribute('data-filter');
 
             achieveCards.forEach(card => {
-                const category = card.getAttribute('data-category');
+                const category = card.getAttribute('data-category') || '';
                 
-                if (filterVal === 'all' || category === filterVal) {
+                if (filterVal === 'all' || category.split(' ').includes(filterVal)) {
                     card.style.display = 'block';
                     card.style.animation = 'fadeIn 0.4s ease forwards';
                 } else {
