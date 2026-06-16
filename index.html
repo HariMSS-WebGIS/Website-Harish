@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballu Harish | Web-GIS & Full-Stack Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Ballu Harish, a professional Web-GIS and Full-Stack MERN Developer with 6+ years of experience. Specializing in spatial technologies, GeoServer, React JS, PostgreSQL, and ArcGIS. Ex-NRSC-ISRO & Current INCOIS Project Scientist.">
+    <meta name="keywords" content="Ballu Harish, Web-GIS, GIS Developer, Full Stack Developer, React, MERN, PostGIS, GeoServer, ArcGIS, INCOIS, ISRO, Hyderabad, Software Engineer">
+    <meta name="author" content="Ballu Harish">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ballu Harish | Web-GIS & Full-Stack Developer">
+    <meta property="og:description" content="Explore the professional portfolio of Ballu Harish. 6+ years of expertise in Web-GIS systems, full-stack JavaScript (React, Node.js), spatial databases, and automated data processing.">
+    <meta property="og:image" content="harish_profile.jpg">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glowing Backgrounds -->
+    <div class="bg-decorations" aria-hidden="true">
+        <div class="ambient-light-1"></div>
+        <div class="ambient-light-2"></div>
+        <div class="ambient-light-3"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="header-section">
+        <div class="container navbar">
+            <a href="#hero" class="logo" id="logo-link">Harish.GIS</a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="active" id="nav-hero">Home</a></li>
+                    <li><a href="#about" id="nav-about">About & Edu</a></li>
+                    <li><a href="#skills" id="nav-skills">Skills</a></li>
+                    <li><a href="#experience" id="nav-experience">Experience</a></li>
+                    <li><a href="#achievements" id="nav-achievements">Publications</a></li>
+                    <li><a href="#certificates" id="nav-certificates">Certificates</a></li>
+                    <li><a href="#contact" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="navbar-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-greeting">Welcome to my Portfolio</span>
+                    <h1 class="hero-name">Ballu Harish</h1>
+                    <div class="hero-title">
+                        I'm a <span class="typing-text" id="typing-text"></span><span class="typing-cursor"></span>
+                    </div>
+                    <p class="hero-description">
+                        Seeking an opportunity within a dynamic environment where I can leverage my 6+ years of extensive experience in Web-GIS technologies and full-stack development. Focused on creating cutting-edge, spatially-enabled applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary" id="btn-view-work">
+                            <i class="fa-solid fa-briefcase"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="btn-get-touch">
+                            <i class="fa-solid fa-envelope"></i> Get in Touch
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 id="stat-exp">6+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 id="stat-certs">25+</h3>
+                            <p>Professional Certifications</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 id="stat-books">3</h3>
+                            <p>Publications & Chapters</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <!-- SVG Spatial Grid Overlay -->
+                    <svg class="spatial-net" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="1" fill="var(--primary)" opacity="0.5" />
+                        <circle cx="80" cy="20" r="1" fill="var(--primary)" opacity="0.5" />
+                        <circle cx="50" cy="50" r="2" fill="var(--secondary)" />
+                        <circle cx="30" cy="80" r="1" fill="var(--primary)" opacity="0.5" />
+                        <circle cx="70" cy="80" r="1" fill="var(--primary)" opacity="0.5" />
+                        <line x1="20" y1="20" x2="50" y2="50" stroke="var(--primary)" stroke-width="0.3" opacity="0.4" />
+                        <line x1="80" y1="20" x2="50" y2="50" stroke="var(--primary)" stroke-width="0.3" opacity="0.4" />
+                        <line x1="30" y1="80" x2="50" y2="50" stroke="var(--primary)" stroke-width="0.3" opacity="0.4" />
+                        <line x1="70" y1="80" x2="50" y2="50" stroke="var(--primary)" stroke-width="0.3" opacity="0.4" />
+                        <line x1="20" y1="20" x2="80" y2="20" stroke="var(--secondary)" stroke-width="0.2" stroke-dasharray="2" opacity="0.3" />
+                        <line x1="30" y1="80" x2="70" y2="80" stroke="var(--secondary)" stroke-width="0.2" stroke-dasharray="2" opacity="0.3" />
+                    </svg>
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-container">
+                        <img src="harish_profile.jpg" alt="Ballu Harish" class="hero-image" id="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About & Education</h2>
+                <p class="section-subtitle">A blend of computer science foundation and advanced spatial information technology</p>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>My Journey</h3>
+                        <div class="about-text">
+                            <p>
+                                I am a passionate Web-GIS and Web Developer based in Hyderabad. My professional career bridges the gap between conventional software development and complex geographic information systems. I specialize in designing responsive geospatial web portals, automating data processing workflows, and integrating massive spatial datasets.
+                            </p>
+                            <p>
+                                Over my career, I've had the privilege of working with leading national organizations, including <strong>INCOIS (Indian National Centre for Ocean Information Services)</strong> and <strong>NRSC-ISRO (National Remote Sensing Centre)</strong>, contributing to portals like Bhuvan Panchayat and weather telemetry applications.
+                            </p>
+                        </div>
+                        
+                        <div class="about-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Location</span>
+                                <span class="meta-val">Hyderabad, Telangana</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Date of Birth</span>
+                                <span class="meta-val">12th August 1990</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Current Role</span>
+                                <span class="meta-val">Project Scientist (INCOIS)</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Languages</span>
+                                <span class="meta-val">English, Telugu, Hindi</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="Resume with Certifications -2026 (1).pdf" target="_blank" class="btn btn-primary" id="btn-download-resume">
+                                <i class="fa-solid fa-file-pdf"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-education">
+                        <h3>Academic Qualifications</h3>
+                        <div class="education-timeline" id="education-timeline">
+                            
+                            <div class="edu-card">
+                                <span class="edu-year">2011 - 2014</span>
+                                <h4 class="edu-degree">M.Tech in Spatial Information Technology</h4>
+                                <p class="edu-school">JNTUH Institute of Science & Technology, Hyderabad</p>
+                                <span class="edu-grade"><i class="fa-solid fa-graduation-cap"></i> Grade: 70.38%</span>
+                            </div>
+                            
+                            <div class="edu-card">
+                                <span class="edu-year">2007 - 2011</span>
+                                <h4 class="edu-degree">B.Tech in Computer Science and Engineering</h4>
+                                <p class="edu-school">Aizza College of Engineering & Technology (JNTUH)</p>
+                                <span class="edu-grade"><i class="fa-solid fa-graduation-cap"></i> Grade: 67.73%</span>
+                            </div>
+                            
+                            <div class="edu-card">
+                                <span class="edu-year">2005 - 2007</span>
+                                <h4 class="edu-degree">Intermediate (M.P.C)</h4>
+                                <p class="edu-school">Board of Intermediate Education, Andhra Pradesh</p>
+                                <span class="edu-grade"><i class="fa-solid fa-school"></i> Grade: 90.00%</span>
+                            </div>
+
+                            <div class="edu-card">
+                                <span class="edu-year">2005</span>
+                                <h4 class="edu-degree">S.S.C</h4>
+                                <p class="edu-school">Board of Secondary Education, Andhra Pradesh</p>
+                                <span class="edu-grade"><i class="fa-solid fa-school"></i> Grade: 76.30%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">My professional toolkit containing GIS, web stacks, programming languages, and server infrastructure</p>
+                
+                <div class="skills-controls" id="skills-controls">
+                    <button class="skill-tab active" data-filter="all">All Skills</button>
+                    <button class="skill-tab" data-filter="frontend">Frontend & Web</button>
+                    <button class="skill-tab" data-filter="gis">GIS & Spatial</button>
+                    <button class="skill-tab" data-filter="backend">Backend & DB</button>
+                    <button class="skill-tab" data-filter="servers">Servers & Tools</button>
+                </div>
+                
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card" data-category="frontend">
+                        <i class="fa-brands fa-react skill-icon"></i>
+                        <span class="skill-name">React JS</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="frontend">
+                        <i class="fa-brands fa-js skill-icon"></i>
+                        <span class="skill-name">JavaScript (ES6+)</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="frontend">
+                        <i class="fa-brands fa-bootstrap skill-icon"></i>
+                        <span class="skill-name">Bootstrap</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="frontend">
+                        <i class="fa-solid fa-code skill-icon"></i>
+                        <span class="skill-name">jQuery & AJAX</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- GIS & Spatial -->
+                    <div class="skill-card" data-category="gis">
+                        <i class="fa-solid fa-earth-americas skill-icon"></i>
+                        <span class="skill-name">GeoServer</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="gis">
+                        <i class="fa-solid fa-map skill-icon"></i>
+                        <span class="skill-name">ArcGIS Server & API</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="gis">
+                        <i class="fa-solid fa-layer-group skill-icon"></i>
+                        <span class="skill-name">OpenLayers & Leaflet</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="gis">
+                        <i class="fa-solid fa-compass-drafting skill-icon"></i>
+                        <span class="skill-name">QGIS & ERDAS Imagine</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="gis">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <span class="skill-name">ArcPy & Spatial Analyst</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="82"></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & DB -->
+                    <div class="skill-card" data-category="backend">
+                        <i class="fa-brands fa-node-js skill-icon"></i>
+                        <span class="skill-name">NodeJS & Express</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="backend">
+                        <i class="fa-solid fa-database skill-icon"></i>
+                        <span class="skill-name">PostgreSQL & PostGIS</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="backend">
+                        <i class="fa-solid fa-server skill-icon"></i>
+                        <span class="skill-name">MySQL & MS SQL Server</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="backend">
+                        <i class="fa-solid fa-diagram-project skill-icon"></i>
+                        <span class="skill-name">Oracle DB & GraphQL</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="backend">
+                        <i class="fa-brands fa-java skill-icon"></i>
+                        <span class="skill-name">Java Core</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="75"></div>
+                        </div>
+                    </div>
+
+                    <!-- Servers & Tools -->
+                    <div class="skill-card" data-category="servers">
+                        <i class="fa-solid fa-network-wired skill-icon"></i>
+                        <span class="skill-name">Tomcat & Apache HTTP</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="servers">
+                        <i class="fa-solid fa-terminal skill-icon"></i>
+                        <span class="skill-name">Shell Scripting</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="78"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="servers">
+                        <i class="fa-solid fa-cloud-arrow-up skill-icon"></i>
+                        <span class="skill-name">WebSphere Server</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="servers">
+                        <i class="fa-solid fa-chart-line skill-icon"></i>
+                        <span class="skill-name">Chart Director</span>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="section bg-secondary">
+            <div class="container">
+                <h2 class="section-title">Professional Timeline</h2>
+                <p class="section-subtitle">Over 6 years of industry experience building state-of-the-art Web-GIS products</p>
+                
+                <div class="timeline" id="timeline">
+                    
+                    <!-- Timeline Card 1: INCOIS -->
+                    <div class="timeline-container timeline-left">
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Project Scientist</h3>
+                                    <div class="timeline-company">INCOIS (Indian National Centre for Ocean Information Services)</div>
+                                </div>
+                                <span class="timeline-date">Sept 2024 - Present</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Leading the critical modernization and migration of the existing web platform from a legacy infrastructure to a modern, open-source stack. 
+                            </p>
+                            <ul class="timeline-desc" style="padding-left: 16px; margin-bottom: 15px;">
+                                <li>Transitioned the web server from WebSphere to Apache Tomcat and Apache HTTP Server.</li>
+                                <li>Migrated spatial database systems from Oracle and ESRI ArcGIS Server to MySQL and GeoServer.</li>
+                                <li>Successfully resolved compatibility challenges, deprecated codebases, and optimized spatial query performances.</li>
+                            </ul>
+                            <div class="timeline-techs">
+                                <span class="timeline-tech">Apache Tomcat</span>
+                                <span class="timeline-tech">GeoServer</span>
+                                <span class="timeline-tech">MySQL</span>
+                                <span class="timeline-tech">WebSphere Migration</span>
+                                <span class="timeline-tech">HTML5/JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Card 2: NRSC ISRO -->
+                    <div class="timeline-container timeline-right">
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Research Scientist</h3>
+                                    <div class="timeline-company">NRSC-ISRO (National Remote Sensing Centre), Hyderabad</div>
+                                </div>
+                                <span class="timeline-date">Sept 2022 - March 2024</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Spearheaded front-end developments and managed backend telemetry services for national spatial portals.
+                            </p>
+                            <ul class="timeline-desc" style="padding-left: 16px; margin-bottom: 15px;">
+                                <li>Led the UI development of the Bhuvan Panchayat Portal using React JS, Bootstrap, jQuery, and AJAX, achieving cross-device responsive stability.</li>
+                                <li>Maintained backend delivery infrastructure using GeoServer, Node.js, and PostgreSQL/PostGIS.</li>
+                                <li>Developed APIs (REST, GraphQL) for seamless data routing across departments.</li>
+                                <li>Created custom automation Python and Shell scripts for backend service uptime and daily data processing.</li>
+                            </ul>
+                            <div class="timeline-techs">
+                                <span class="timeline-tech">React JS</span>
+                                <span class="timeline-tech">GeoServer</span>
+                                <span class="timeline-tech">PostgreSQL/PostGIS</span>
+                                <span class="timeline-tech">NodeJS</span>
+                                <span class="timeline-tech">GraphQL</span>
+                                <span class="timeline-tech">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Card 3: JNTUH -->
+                    <div class="timeline-container timeline-left">
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">GIS Developer</h3>
+                                    <div class="timeline-company">JNTUH, Hyderabad</div>
+                                </div>
+                                <span class="timeline-date">Feb 2016 - Sept 2020</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Spearheaded the research-based spatial project "Exchange of Geospatial Data through Geo-web".
+                            </p>
+                            <ul class="timeline-desc" style="padding-left: 16px; margin-bottom: 15px;">
+                                <li>Integrated geospatial vector, image, and map services hosted on ESRI ArcGIS Server.</li>
+                                <li>Developed customized map-view pages using ArcGIS JavaScript API, Dojo Toolkit, and stylesheets.</li>
+                                <li>Created custom vector rendering tools, query tasks, layers toggle, and pop-up templates for dynamic geospatial views.</li>
+                            </ul>
+                            <div class="timeline-techs">
+                                <span class="timeline-tech">ArcGIS Server</span>
+                                <span class="timeline-tech">ArcGIS JS API</span>
+                                <span class="timeline-tech">Dojo Toolkit</span>
+                                <span class="timeline-tech">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Card 4: Avineon -->
+                    <div class="timeline-container timeline-right">
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Assoc. Photogrammetry</h3>
+                                    <div class="timeline-company">Avineon India Pvt. Ltd.</div>
+                                </div>
+                                <span class="timeline-date">March 2015 - Jan 2016</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Contributed to major international geospatial mapping projects.
+                            </p>
+                            <ul class="timeline-desc" style="padding-left: 16px; margin-bottom: 15px;">
+                                <li><strong>Saudi Telecom Company Project:</strong> Analyzed satellite imagery using ArcGIS and ERDAS Imagine to identify tower-lacking areas, aiding infrastructure placements.</li>
+                                <li><strong>IGN-France Pilot Project:</strong> Utilized MicroStation, TerraScan, and TerraModeler to classify LiDAR points and compute bare ground surfaces for terrain modeling.</li>
+                            </ul>
+                            <div class="timeline-techs">
+                                <span class="timeline-tech">ArcGIS</span>
+                                <span class="timeline-tech">ERDAS Imagine</span>
+                                <span class="timeline-tech">MicroStation</span>
+                                <span class="timeline-tech">TerraScan</span>
+                                <span class="timeline-tech">LiDAR Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Card 5: INCOIS Intern -->
+                    <div class="timeline-container timeline-left">
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Project Intern</h3>
+                                    <div class="timeline-company">INCOIS, Hyderabad</div>
+                                </div>
+                                <span class="timeline-date">Nov 2013 - Nov 2014</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Developed an intranet application for weather data decryption and mapping.
+                            </p>
+                            <ul class="timeline-desc" style="padding-left: 16px; margin-bottom: 15px;">
+                                <li>Extracted and decrypted weather GTS data from the RTH hub (New Delhi) using Core Java.</li>
+                                <li>Decrypted telemetry data was fed into an MS SQL Server database.</li>
+                                <li>Integrated OpenLayers for spatial display and Chart Director for telemetry charts, allowing spreadsheets data extraction.</li>
+                            </ul>
+                            <div class="timeline-techs">
+                                <span class="timeline-tech">Core Java</span>
+                                <span class="timeline-tech">SQL Server</span>
+                                <span class="timeline-tech">OpenLayers</span>
+                                <span class="timeline-tech">Chart Director</span>
+                                <span class="timeline-tech">GTS Data Decryption</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2 class="section-title">Publications & Achievements</h2>
+                <p class="section-subtitle">Scholarly contributions to publications and academic literature in geospatial technology</p>
+                
+                <div class="achievements-grid" id="achievements-grid">
+                    
+                    <!-- Book Chapter -->
+                    <div class="glass-card achieve-card">
+                        <div class="achieve-icon-box">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="achieve-content">
+                            <span class="badge">Book Chapter</span>
+                            <div class="achieve-meta" style="margin-top: 8px;">CRC Press, Taylor & Francis Group, 2024</div>
+                            <h4>Authored Chapter: "Internet Technologies"</h4>
+                            <p class="achieve-desc">
+                                Published as the second chapter in the edited volume <em>Advances in Geospatial Technologies for Natural Resource Management</em>. Outlined web architectures, Web-GIS data exchanges, and protocol specifications.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Book Editor -->
+                    <div class="glass-card achieve-card">
+                        <div class="achieve-icon-box">
+                            <i class="fa-solid fa-marker"></i>
+                        </div>
+                        <div class="achieve-content">
+                            <span class="badge secondary">Book Editor</span>
+                            <div class="achieve-meta" style="margin-top: 8px;">IIP Publishing</div>
+                            <h4>Editor: "Futuristic Trends in IT"</h4>
+                            <p class="achieve-desc">
+                                Appointed as a Book Editor for the academic volume titled <em>Futuristic Trends in Information Technology</em>. Managed book review systems and curated peer chapters. (Book Series ID: IIP-V2-2022-BS-14-02).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter Publication -->
+                    <div class="glass-card achieve-card">
+                        <div class="achieve-icon-box">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <div class="achieve-content">
+                            <span class="badge">Research Article</span>
+                            <div class="achieve-meta" style="margin-top: 8px;">Research Development in Sci & Tech</div>
+                            <h4>"Displaying Map Server Data"</h4>
+                            <p class="achieve-desc">
+                                Published the chapter "Displaying the Map server data using Arc-GIS server Javascript API" outlining custom widgets, popup systems, and ArcGIS client-side rendering optimizations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Leadership Roles -->
+                    <div class="glass-card achieve-card">
+                        <div class="achieve-icon-box">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div class="achieve-content">
+                            <span class="badge secondary">Skill Foundation</span>
+                            <div class="achieve-meta" style="margin-top: 8px;">RRI Skill & Knowledge Foundation</div>
+                            <h4>Technical Lead & Member</h4>
+                            <p class="achieve-desc">
+                                Serving as a Technical Lead guiding regional educational modules, training workshops, and open-source project initiatives. Profile listed at: <a href="https://rrisk.in/team" target="_blank" style="color: var(--primary); font-weight:600;">rrisk.in/team <i class="fa-solid fa-up-right-from-square" style="font-size:0.8rem;"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section bg-secondary">
+            <div class="container">
+                <h2 class="section-title">Certifications Catalog</h2>
+                <p class="section-subtitle">Validated skills and courses in React, Databases, Remote Sensing, and Academic Research</p>
+                
+                <div class="catalog-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="cert-search" placeholder="Search certificates...">
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="nasscom">NASSCOM Stacks</button>
+                        <button class="filter-btn" data-filter="iirs">IIRS - ISRO</button>
+                        <button class="filter-btn" data-filter="scopus">Scopus Academy</button>
+                        <button class="filter-btn" data-filter="review">Reviewer & Other</button>
+                    </div>
+                </div>
+                
+                <div class="certificates-grid" id="certificates-grid">
+                    
+                    <!-- NASSCOM Stacks -->
+                    <div class="cert-card-item" data-category="nasscom">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-award cert-icon"></i>
+                                <span class="cert-category">NASSCOM</span>
+                            </div>
+                            <h3 class="cert-title">React JS Certification</h3>
+                            <p class="cert-issuer">IT-ITeS Sector Skills Council NASSCOM</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Feb 2026</span>
+                                <a href="https://inspiration-fun-7467.my.salesforce-sites.com/CDACcertificatePage2?id=a02Vy00000ueC2aIAE" target="_blank" class="cert-link">Verify <i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card-item" data-category="nasscom">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-award cert-icon"></i>
+                                <span class="cert-category">NASSCOM</span>
+                            </div>
+                            <h3 class="cert-title">RDBMS for Data Science</h3>
+                            <p class="cert-issuer">IT-ITeS Sector Skills Council NASSCOM</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Feb 2026</span>
+                                <a href="pdf/Harish+Ballu_RDBMS.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="nasscom">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-award cert-icon"></i>
+                                <span class="cert-category">NASSCOM</span>
+                            </div>
+                            <h3 class="cert-title">MERN Full Stack Developer</h3>
+                            <p class="cert-issuer">IT-ITeS Sector Skills Council NASSCOM</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Feb 2026</span>
+                                <a href="pdf/MERN-FUTURESKILLS-NASSCOM.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IIRS - ISRO -->
+                    <div class="cert-card-item" data-category="iirs">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-graduation-cap cert-icon"></i>
+                                <span class="cert-category">IIRS-ISRO</span>
+                            </div>
+                            <h3 class="cert-title">Web GIS - Geo-visualization</h3>
+                            <p class="cert-issuer">IIRS Outreach Programme</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Nov 2019</span>
+                                <a href="iirscertificates/certificate_201955096263.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="iirs">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-graduation-cap cert-icon"></i>
+                                <span class="cert-category">IIRS-ISRO</span>
+                            </div>
+                            <h3 class="cert-title">Geoprocessing using Python</h3>
+                            <p class="cert-issuer">IIRS Outreach Programme</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">July 2019</span>
+                                <a href="iirscertificates/certificate_201949078975.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="iirs">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-graduation-cap cert-icon"></i>
+                                <span class="cert-category">IIRS-ISRO</span>
+                            </div>
+                            <h3 class="cert-title">Microwave Radar Remote Sensing</h3>
+                            <p class="cert-issuer">IIRS Outreach Programme</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">April 2017</span>
+                                <a href="iirscertificates/certificate_20172014173.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="iirs">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-graduation-cap cert-icon"></i>
+                                <span class="cert-category">IIRS-ISRO</span>
+                            </div>
+                            <h3 class="cert-title">GIS & GNSS (Outreach 18th)</h3>
+                            <p class="cert-issuer">CIST-IST-JNTUH / IIRS</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Nov 2016</span>
+                                <a href="iirscertificates/certificate_EDU182016118658.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scopus Academy -->
+                    <div class="cert-card-item" data-category="scopus">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-book-open-reader cert-icon"></i>
+                                <span class="cert-category">Scopus</span>
+                            </div>
+                            <h3 class="cert-title">Conference Skills Certification</h3>
+                            <p class="cert-issuer">Scopus Academy researchers</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Validated</span>
+                                <a href="scopuscertificates/conference-skills-researchers-certificate.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="scopus">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-book-open-reader cert-icon"></i>
+                                <span class="cert-category">Scopus</span>
+                            </div>
+                            <h3 class="cert-title">Book Writing Certification</h3>
+                            <p class="cert-issuer">Scopus Academy</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Validated</span>
+                                <a href="scopuscertificates/book-writing-certificate.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviewer Letters -->
+                    <div class="cert-card-item" data-category="review">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-stamp cert-icon"></i>
+                                <span class="cert-category">Journal Review</span>
+                            </div>
+                            <h3 class="cert-title">Reviewer Appointed Letter</h3>
+                            <p class="cert-issuer">JETT - Letter of Reviewer</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Validated</span>
+                                <a href="pdf/JETT- Letter of Reviewer.cleaned.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="review">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-circle-check cert-icon"></i>
+                                <span class="cert-category">IT Literacy</span>
+                            </div>
+                            <h3 class="cert-title">Digital Literacy Test</h3>
+                            <p class="cert-issuer">Microsoft Certificate</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">March 2011</span>
+                                <span class="cert-date">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-item" data-category="gis">
+                        <div class="glass-card cert-card">
+                            <div class="cert-card-header">
+                                <i class="fa-solid fa-earth-asia cert-icon"></i>
+                                <span class="cert-category">GIS Tools</span>
+                            </div>
+                            <h3 class="cert-title">GIS Basics & ArcGIS Pro</h3>
+                            <p class="cert-issuer">Basics of Spatial Analysis</p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Dec 2025</span>
+                                <a href="pdf/GIS Basics_Certificate_12302025.pdf" target="_blank" class="cert-link">PDF <i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- References Section (Bonus for premium feel) -->
+        <section id="references" class="section">
+            <div class="container">
+                <h2 class="section-title">References</h2>
+                <p class="section-subtitle">Academic and scientific endorsements from my tenures at ISRO and INCOIS</p>
+                
+                <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
+                    
+                    <div class="glass-card" style="padding: 24px;">
+                        <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 15px;">
+                            <div style="width: 50px; height:50px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-weight:700; font-size: 1.2rem;">SR</div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size:1.15rem; font-weight: 700;">S.S. Rajasekhar</h4>
+                                <p style="color: var(--primary); font-size:0.9rem; font-weight:600;">Head Applications, RRSC-NRSC-ISRO</p>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">
+                            Supervised and guided my development activities during Bhuvan Panchayat portal deployments.
+                        </p>
+                        <div style="border-top:1px solid var(--border-color); padding-top: 10px; font-size:0.85rem; color:var(--text-muted);">
+                            <div><i class="fa-solid fa-phone"></i> +91-9494228383</div>
+                            <div style="margin-top: 4px;"><i class="fa-solid fa-envelope"></i> ssraj@nrsc.gov.in</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 24px;">
+                        <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 15px;">
+                            <div style="width: 50px; height:50px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-weight:700; font-size: 1.2rem;">VS</div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size:1.15rem; font-weight: 700;">Dr. R. Venkat Seshu</h4>
+                                <p style="color: var(--primary); font-size:0.9rem; font-weight:600;">Scientist-F, INCOIS Hyderabad</p>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">
+                            Oversaw weather data processing and decryption modules during ocean weather platform creation.
+                        </p>
+                        <div style="border-top:1px solid var(--border-color); padding-top: 10px; font-size:0.85rem; color:var(--text-muted);">
+                            <div><i class="fa-solid fa-phone"></i> +91-9010264931</div>
+                            <div style="margin-top: 4px;"><i class="fa-solid fa-envelope"></i> venkat@incois.gov.in</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-secondary">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a question or interested in collaborating? Drop a message!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        
+                        <div class="glass-card info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Email Me</h4>
+                                <p><a href="mailto:harishballu111@gmail.com">harishballu111@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Call Me</h4>
+                                <p><a href="tel:+919704623982">+91-9704623982</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Address</h4>
+                                <p>Pragathi Nagar, Kukatpally, Hyderabad, 500090</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="glass-card">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Inquiry about GIS Collaboration" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Your message details here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">Harish.GIS</div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ballu-harish-88857224" target="_blank" class="social-btn" aria-label="LinkedIn" id="link-linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:harishballu111@gmail.com" class="social-btn" aria-label="Email" id="link-email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="tel:+919704623982" class="social-btn" aria-label="Phone" id="link-phone">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+            
+            <p class="copyright" id="copyright-text">
+                &copy; 2026 Ballu Harish. All rights reserved. | Spatial Solutions & Web Systems.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
