@@ -955,6 +955,30 @@ header {
     gap: 8px;
 }
 
+.project-footer {
+    display: flex;
+    gap: 16px;
+    margin-top: auto;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    color: var(--secondary);
+    transform: translateY(-1px);
+}
+
 /* Certificates Catalog */
 .catalog-controls {
     display: flex;

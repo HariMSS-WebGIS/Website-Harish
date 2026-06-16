@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingSpan = document.getElementById('typing-text');
     const roles = [
         'Web-GIS Developer',
-        'MERN Stack Developer',
         'Project Scientist at INCOIS',
         'Ex-Research Scientist at ISRO',
         'Geospatial Engineer'
