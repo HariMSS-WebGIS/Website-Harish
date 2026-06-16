@@ -225,6 +225,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----------------------------------------------------
+    // Achievements / Publications Filter
+    // ----------------------------------------------------
+    const achieveFilterBtns = document.querySelectorAll('.achieve-filter-btn');
+    const achieveCards = document.querySelectorAll('.achieve-card-item');
+
+    achieveFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            achieveFilterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filterVal = btn.getAttribute('data-filter');
+
+            achieveCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                
+                if (filterVal === 'all' || category === filterVal) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.4s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // ----------------------------------------------------
     // Contact Form Submission Handling
     // ----------------------------------------------------
     const contactForm = document.getElementById('contact-form');
