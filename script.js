@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Formulate mailto body
             const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-            const mailtoUrl = `mailto:harishmanjualson@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            const mailtoUrl = `mailto:harishmanjulason@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             
             // Open user's default email client
             window.location.href = mailtoUrl;
