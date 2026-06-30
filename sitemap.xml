@@ -4,8 +4,4 @@
     <loc>https://harimss-webgis.github.io/Website-Harish/</loc>
     <priority>1.0</priority>
   </url>
-  <url>
-  <loc>https://harimss-webgis.github.io/geo-quest-finder/</loc>
-  <priority>0.8</priority>
-  </url>
 </urlset>
