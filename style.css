@@ -836,7 +836,7 @@ header {
 }
 
 /* Publications & Achievements */
-/*
+
 .achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -847,18 +847,9 @@ header {
     /*display: flex;*/
     gap: 20px;
     padding: 28px;
-}*/
+}
 
-/* Equal-height achievement cards */
-#achievements-grid {
-    align-items: stretch;
-}
-#achievements-grid .achieve-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
+
 
 .achieve-icon-box {
     width: 60px;
