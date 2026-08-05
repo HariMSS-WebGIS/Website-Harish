@@ -843,7 +843,7 @@ header {
 }
 
 .achieve-card {
-    display: flex;
+    /*display: flex;*/
     gap: 20px;
     padding: 28px;
 }
